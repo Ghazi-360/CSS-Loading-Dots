@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    overflow: hidden;
+}
+
+#Container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(58, 54, 54);
+    color: #ffffff;
+    font-size: 52px;
+    font-family: poppins;
+}
+
+@keyframes anim {
+    0% {
+        opacity: .3;
+    }
+    30% {
+        opacity: 1;
+    }
+    100% {
+        opacity: .3;
+    }
+}
+
+.Loading span{
+    animation-name: anim;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+}
+.Loading span:nth-child(2) {
+    animation-delay: .2s;
+}
+.Loading span:nth-child(3) {
+    animation-delay: .4s;
+}
